@@ -1,21 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,Button, Text, View ,TextInput, TouchableHighlight, TouchableOpacity} from 'react-native';
+// import NewAdmin from './pages/NewAdmin';
+// import Product from './pages/Product';
+// import Admin from './pages/Admin';
+//import Navigator from './pages/homeStack';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Navigator from './src/routes/navigator';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+//import NewCustomer from './src/screens/NewCustmor';
+ 
+export default class App extends React.Component {
+
+  
+render(){
+  return (  
+    
+    <Navigator/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}
